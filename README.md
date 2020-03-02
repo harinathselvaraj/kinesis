@@ -7,8 +7,6 @@ https://eu-west-1.console.aws.amazon.com/kinesis/home?region=eu-west-1#/intro
 Select first option - 
 https://eu-west-1.console.aws.amazon.com/kinesis/home?region=eu-west-1#/streams/create
 
-![Amazon Kinesis](1.png)
-
 Data Stream Name: hari_datastream
 
 Access Key ID:
@@ -16,6 +14,9 @@ AKIAIPOW5Z2EJQLZ2BNA
 Secret Access Key:
 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
 ```
+
+![Amazon Kinesis](1.png)
+
 
 ## Install AWSCLI on macos
 https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
