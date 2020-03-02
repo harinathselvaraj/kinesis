@@ -16,6 +16,12 @@ IORV0NYn/u1O6mm1m+YMukLEl4ENrNd6xv9BhjSr
 ```
 
 ![Amazon Kinesis](1.png)
+![Amazon Kinesis](2.png)
+![Amazon Kinesis](3.png)
+![Amazon Kinesis](4.png)
+![Amazon Kinesis](5.png)
+![Amazon Kinesis](6.png)
+![Amazon Kinesis](7.png)
 
 ## Install AWSCLI on macos
 https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
