@@ -15,21 +15,21 @@ Secret Access Key:
 IORV0NYn/u1O6mm1m+YMukLEl4ENrNd6xv9BhjSr
 ```
 
-## Install AWSCLI on macos - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
-
+## Install AWSCLI on macos
+https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
 ```
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg AWSCLIV2.pkg -target /
 ```
 
-## confirming the Installation - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html#cliv2-mac-install-confirm
+## confirming the Installation
+https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html#cliv2-mac-install-confirm
 
 ### CLI Commands for setting up parameters
 ```
 aws configure
 eu-west-1
 ```
-
 
 ## Setup Virtual Environment
 ```
