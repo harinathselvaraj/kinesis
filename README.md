@@ -7,6 +7,8 @@ https://eu-west-1.console.aws.amazon.com/kinesis/home?region=eu-west-1#/intro
 Select first option - 
 https://eu-west-1.console.aws.amazon.com/kinesis/home?region=eu-west-1#/streams/create
 
+![Amazon Kinesis](1.png)
+
 Data Stream Name: hari_datastream
 
 Access Key ID:
