@@ -53,3 +53,18 @@ python kinesis_consumer.py
 https://www.arundhaj.com/blog/getting-started-kinesis-python.html
 ```
 
+
+```mermaid
+graph TD
+DataStoreCommon-DSCommonConstructVehicleMasterCD4C5277-MK5K911OUP5G --> |Job: htp-vehicle-master-extractor-run| s3_vehicle_master
+DataStoreCommon-DSCommonConstructVehicleMasterCD4C5277-MK5K911OUP5G --> |Lambda: VehicleServicesNA-VSConstructVehicleMasterDynamoKi-Ni09ErGxQ5vC| s3_vehicle_logs_temp
+s3_vehicle_logs_temp["datastorecommon-dscommonconstructvehiclemasteraud-vmh62d7emfrz"] --> |Parquet Conversion Glue Job: vehicle_master_logs_converter|s3_vehicle_logs
+s3_vehicle_master[s3://datascience-prod-data/vehicle_master/vehicle_master.json]--> |Crawler: htp_prod_vehicle_master_data|master_table
+s3_vehicle_logs[s3://datascience-prod-data/telematics_vehiclemaster_logs/telematics_vehiclemaster_logs_raw]--> |Crawler: flat_vehicle_master_logs_crawler|logs_table
+logs_table["htp_prod.telematics_vehiclemaster_logs_raw"]--> |Vehicle Active Monthly Data Processor Run | active_table
+master_table["htp_prod.vehicle_master"]-->|current active vehicles|C{Validation Run}
+active_table["htp_prod.vehicle_activated_monthly"]--> |active vehicles in previous month|C{Validation Run}
+C --> |Insignificant Difference| D["Validation Successful"]
+C --> |Significant Difference| E["Further Investigation"]
+```
+
